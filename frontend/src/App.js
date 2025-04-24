@@ -3,7 +3,7 @@ import axios from 'axios';
 import { ExclamationCircleIcon } from '@heroicons/react/24/outline';
 
 // Constants
-const API_URL = 'http://localhost:5000';
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5000';
 const INITIAL_MESSAGE = 'Hello!';
 
 const SUBJECTS = {
